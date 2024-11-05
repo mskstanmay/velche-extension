@@ -1,0 +1,127 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    width: 350px;
+    background-color: #f4f6f9;
+    margin: 0;
+    overflow: hidden;
+}
+
+.activate-btn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.activate-btn.active {
+    background-color: green;
+    color: white;
+}
+
+.activate-btn.inactive {
+    background-color: red;
+    color: white;
+}
+
+/* Container styling */
+.popup-container {
+    text-align: center;
+    color: #333;
+}
+
+/* Header styling */
+h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Category Input Section Styling */
+.category-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.category-input label {
+    margin-right: 10px;
+    font-weight: bold;
+    flex: 0 0 70px; /* Adjust this width as needed */
+}
+
+.category-input input {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s; /* Smooth transition */
+}
+
+.category-input input:focus {
+    border-color: #4CAF50; /* Highlight border on focus */
+}
+
+.save-btn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.save-btn:hover {
+    background-color: #45a049;
+}
+
+/* Status message styling */
+#status {
+    font-size: 12px;
+    color: #4caf50;
+    margin-top: 5px;
+}
+
+/* Saved categories styling */
+h4 {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.category-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.category-list button {
+    background-color: #ff5c5c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 3px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.category-list button:hover {
+    background-color: #e04646;
+}

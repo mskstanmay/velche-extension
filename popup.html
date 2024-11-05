@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velche Email Sorter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="popup-container">
+        <h3>Email Sorter</h3>
+        
+        <!-- Category Input Section -->
+        <div class="category-input">
+            <label for="category">Category:</label>
+            <input type="text" id="category" placeholder="Enter category" />
+            <button id="saveRule" class="save-btn">Save Rule</button>
+        </div>
+
+        <!-- Status Message -->
+        <p id="status"></p>
+
+        <!-- Saved Categories Section -->
+        <h4>Saved Categories</h4>
+        <ul id="categoryList" class="category-list"></ul>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
