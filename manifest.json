@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Velche Extension",
+  "version": "2.0.0",
+  "description": "Full-blown React + TypeScript Chrome Extension. Quickly organize and categorize your inbox.",
+  "permissions": ["tabs", "scripting","storage", "activeTab"],
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background/index.js",
+    "type": "module"
+  },
+  "options_page": "options/index.html",
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content/index.js"]
+    }
+  ]
+}
